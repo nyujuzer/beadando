@@ -1,0 +1,143 @@
+:root {
+    --primary: #0878c4; /* Replace with your preferred primary color */
+    --action: #e0f3ff; /* Replace with your preferred primary color */
+    --action-hover: #6fc8ff; /* Replace with your preferred primary color */
+  }
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+.post {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.post strong {
+    color: #007bff;
+}
+
+form {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+body{
+    background-color: rgb(33, 33, 33);
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+label{
+    font-size: 2em;
+}
+
+input[type=text], input[type=password]{
+    font-size: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--action)
+}
+
+.container-col {
+    display: flex;
+    justify-content: center; /* Center the card horizontally */
+    align-items: center; /* Center the card vertically */
+    height: 100vh; /* Ensure the container takes up the full viewport height */
+  }
+  
+  .card {
+    width: auto; /* Adjust the width to your preference */
+    padding: 20px;
+    background-color: var(--primary);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .btn-submit-okay{
+    margin-top: 10px;
+    background-color: var(--action); /* Use your preferred primary color */
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  .btn-submit-okay:hover{
+    background-color: var(--action-hover); /* Change the color on hover if desired */
+  }
+  
+
+.card {
+    width: auto; /* Adjust the width to your preference */
+    margin: auto auto;
+    padding: 20px;
+    background-color: var(--primary);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .warning {
+    background-color: #ffff99; /* Shade of yellow */
+    border: 2px solid #e6b800; /* Darker border color */
+    color: #996300; /* Darker text color */
+    padding: 10px; /* Increase padding for thickness */
+    border-radius: 5px; /* Rounded corners for a box-like appearance */
+    font-weight: bold; /* Bold text for emphasis */
+  }
+  .like-button {
+    display: none; /* Hide the actual checkbox input */
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 5px 10px; /* Button padding */
+    border: none; /* Remove the button border */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.like-button-label {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.like-button:checked + .like-button-label {
+    background-color: #e74c3c; /* Change background color when checked */
+}
